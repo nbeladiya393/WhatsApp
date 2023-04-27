@@ -7,24 +7,81 @@
     android:orientation="horizontal"
     tools:context=".MainActivity">
 
+    <fragment
+        android:id="@+id/chatFrag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.whatsapp.Fragment.ChatFragment"/>
+
+
+    <fragment
+        android:id="@+id/statusFrag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.whatsapp.Fragment.StatusFragment"/>
+
+
+    <fragment
+        android:id="@+id/callsFrag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.whatsapp.Fragment.CallsFragment"/>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="?actionBarSize"
-        android:background="#075E54">
+        android:layout_height="93dp"
+        android:background="#075E54"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="WhatsApp"
             android:layout_gravity="center_vertical"
-            android:textSize="24dp"
-            android:textStyle="bold"
-            android:layout_margin="5dp"
-            android:textColor="#fff" />
+            android:layout_margin="10dp"
+            android:text="WhatsApp"
+            android:textColor="#fff"
+            android:textSize="25dp"
+            android:textStyle="bold" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Chats"
+                android:textColor="#fff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Status"
+                android:textColor="#fff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Calls"
+                android:textColor="#fff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
         </LinearLayout>
+
+
+    </LinearLayout>
 
     </LinearLayout>
 
